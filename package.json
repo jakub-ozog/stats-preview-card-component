@@ -1,0 +1,23 @@
+{
+  "name": "stats-preview-card-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobharraldson/stats-preview-card-component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobharraldson/stats-preview-card-component/issues"
+  },
+  "homepage": "https://github.com/jacobharraldson/stats-preview-card-component#readme",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}
