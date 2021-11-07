@@ -1,0 +1,44 @@
+@use "components/colors";
+@use "components/fonts";
+
+body,html {
+    background-color: colors.$VeryDarkBlue;
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .module {
+        margin: 0 auto;
+        background-color: colors.$DarkDesaturatedBlue;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 1em;
+        overflow: hidden;
+    }
+
+    .module-title {
+        font-family: fonts.$InterFont;
+        color: colors.$White;
+        padding-top: 2em;
+        padding-right: 5em;
+        padding-left: 4em;
+        font-size: 1.25rem;
+    }
+
+    .module-image {
+         width: 100%;
+         height: 100%;
+    }
+}
