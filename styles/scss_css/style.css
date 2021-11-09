@@ -38,10 +38,21 @@ body, html {
   color: #aa5cdb;
 }
 .container .module .module-text-content .module-description {
-  color: white;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Inter", sans-serif;
+  line-height: 1.8em;
+}
+.container .module .module-text-content .module-numbers {
+  display: flex;
+  gap: 4em;
   font-family: "Lexend Deca", sans-serif;
 }
+.container .module .module-text-content .module-numbers .stats-header {
+  color: white;
+}
+.container .module .module-text-content .module-numbers h2 {
+  margin-bottom: 0.4em;
+}
 .container .module .module-image {
-  width: 100%;
   height: 100%;
 }/*# sourceMappingURL=style.css.map */
