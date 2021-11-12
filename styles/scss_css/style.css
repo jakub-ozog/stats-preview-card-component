@@ -21,13 +21,14 @@ body, html {
   background-color: #1b1938;
   display: flex;
   justify-content: space-between;
-  border-radius: 1em;
+  border-radius: 0.8em;
   overflow: hidden;
 }
 .container .module .module-text-content {
   padding-top: 2em;
   padding-right: 5em;
   padding-left: 4em;
+  padding-bottom: 3em;
 }
 .container .module .module-text-content .module-title {
   font-family: "Inter", sans-serif;
@@ -41,18 +42,32 @@ body, html {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Inter", sans-serif;
   line-height: 1.8em;
+  font-size: 0.94rem;
 }
 .container .module .module-text-content .module-numbers {
   display: flex;
   gap: 4em;
   font-family: "Lexend Deca", sans-serif;
+  margin-top: 4em;
 }
 .container .module .module-text-content .module-numbers .stats-header {
   color: white;
 }
+.container .module .module-text-content .module-numbers .stats-subheader {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.94rem;
+}
 .container .module .module-text-content .module-numbers h2 {
   margin-bottom: 0.4em;
 }
-.container .module .module-image {
+.container .module .module-image-section {
+  width: 100%;
+  background: url("/images/image-header-desktop.jpg");
+  background-color: #aa5cdb;
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-right: 4em;
+}
+.container .module .module-image-section .module-image {
   height: 100%;
 }/*# sourceMappingURL=style.css.map */
