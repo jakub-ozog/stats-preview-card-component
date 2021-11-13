@@ -9,7 +9,7 @@ body, html {
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   height: 100vh;
   display: flex;
@@ -28,7 +28,6 @@ body, html {
   padding-top: 2em;
   padding-right: 5em;
   padding-left: 4em;
-  padding-bottom: 3em;
 }
 .container .module .module-text-content .module-title {
   font-family: "Inter", sans-serif;
@@ -62,11 +61,17 @@ body, html {
 }
 .container .module .module-image-section {
   width: 100%;
-  background: url("/images/image-header-desktop.jpg");
+}
+.container .module .module-image-section .module-image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
   background-color: #aa5cdb;
-  background-blend-mode: multiply;
-  background-size: cover;
-  padding-right: 4em;
+  position: absolute;
+  opacity: 0.4;
+}
+.container .module .module-image-section .module-image {
+  position: relative;
 }
 .container .module .module-image-section .module-image {
   height: 100%;
