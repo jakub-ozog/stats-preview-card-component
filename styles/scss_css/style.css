@@ -60,19 +60,41 @@ body, html {
   margin-bottom: 0.4em;
 }
 .container .module .module-image-section {
-  width: 100%;
-}
-.container .module .module-image-section .module-image::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #aa5cdb;
-  position: absolute;
-  opacity: 0.4;
-}
-.container .module .module-image-section .module-image {
   position: relative;
 }
 .container .module .module-image-section .module-image {
+  display: block;
+}
+.container .module .module-image-section .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  background: #aa5cdb;
+  opacity: 0.8;
+  filter: contrast(1.5);
+  -webkit-filter: contrast(1.5);
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 1435px) {
+  .container .module .module-text-content .module-numbers {
+    margin-top: 2em;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 58%;
+  }
+  .container .module {
+    flex-direction: column-reverse;
+  }
+  .container .module .module-image-section {
+    display: flex;
+    justify-content: center;
+  }
+  .container .module .module-image-section .module-image {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
