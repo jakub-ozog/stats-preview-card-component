@@ -186,7 +186,12 @@ body,html {
                 justify-content: center;
 
                 .module-image {
+                    display: none;
+                }
+
+                .module-image-mob {
                     width: 100%;
+                    display: block;
                 }
             }
         }

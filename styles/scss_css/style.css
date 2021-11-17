@@ -144,7 +144,11 @@ body, html {
     justify-content: center;
   }
   .container .module .module-image-section .module-image {
+    display: none;
+  }
+  .container .module .module-image-section .module-image-mob {
     width: 100%;
+    display: block;
   }
 }
 @media (max-width: 750px) {
