@@ -68,6 +68,9 @@ body, html {
 .container .module .module-image-section .module-image {
   display: block;
 }
+.container .module .module-image-section .module-image-mob {
+  display: none;
+}
 .container .module .module-image-section .image-overlay {
   position: absolute;
   top: 0;
@@ -93,6 +96,18 @@ body, html {
     font-size: 1.2em;
   }
 }
+/* @media (max-width: 1330px) {
+    .container {
+        .module {
+            .module-text-content {
+                .module-numbers {
+                    margin-top: .4em;
+                }
+            }
+        }
+    }  
+
+} */
 @media (max-width: 1435px) {
   .container .module .module-text-content .module-numbers {
     margin-top: 2em;
@@ -102,10 +117,14 @@ body, html {
   .container {
     padding-left: 0;
     padding-right: 0;
+    width: 70%;
+    height: 50%;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
   .container .module {
     flex-direction: column-reverse;
-    width: 70%;
+    width: 80%;
     text-align: center;
   }
   .container .module .module-text-content {
@@ -118,6 +137,7 @@ body, html {
   }
   .container .module .module-text-content .module-numbers {
     justify-content: center;
+    gap: 3em;
   }
   .container .module .module-image-section {
     display: flex;
@@ -128,6 +148,9 @@ body, html {
   }
 }
 @media (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
   .container .module .module-text-content {
     text-align: center;
   }
@@ -149,8 +172,8 @@ body, html {
     width: 80%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .container .module {
-    width: 88%;
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
