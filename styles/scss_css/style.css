@@ -89,25 +89,39 @@ body, html {
   }
   .container .module .module-text-content .module-numbers {
     margin-top: 2em;
+    font-size: 1.2em;
   }
 }
+/* @media (max-width: 1330px) {
+    .container {
+        .module {
+            .module-text-content {
+                .module-numbers {
+                    margin-top: .4em;
+                }
+            }
+        }
+    }  
+
+} */
 @media (max-width: 1435px) {
   .container .module .module-text-content .module-numbers {
     margin-top: 2em;
   }
 }
 @media (max-width: 1100px) {
-  .container {
-    width: 58%;
-  }
   .container .module {
     flex-direction: column-reverse;
+    width: 70%;
+  }
+  .container .module .module-text-content {
+    width: 100%;
   }
   .container .module .module-image-section {
     display: flex;
     justify-content: center;
   }
   .container .module .module-image-section .module-image {
-    max-width: 100%;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
