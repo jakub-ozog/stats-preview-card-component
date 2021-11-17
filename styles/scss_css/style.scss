@@ -12,12 +12,15 @@ body,html {
 }
 
 .container {
-    width: 85%;
+    // width: 85%;
     margin: 0 auto;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left:7em;
+    padding-right:7em;
+    
     
     .module {
         margin: 0 auto;
@@ -31,7 +34,7 @@ body,html {
             padding-top: 2em;
             padding-right: 5em;
             padding-left: 4em;  
-            // padding-bottom: 3em;
+            width: 55%;
         
             .module-title {
                 font-family: fonts.$InterFont;
@@ -97,9 +100,25 @@ body,html {
 }
 
 
-@media (max-width: 1600px) {
-    
+@media (min-width: 1600px) {
+    .container {
+        .module {
+            .module-text-content {
+                .module-title {
+                    font-size: 1.50rem;
+                }
+
+                .module-description {
+                    font-size: 1rem;
+                }
+                .module-numbers {
+                    margin-top: 2em;
+                }
+            }
+        }
+    }  
 }
+
 
 @media (max-width: 1435px) {
     .container {

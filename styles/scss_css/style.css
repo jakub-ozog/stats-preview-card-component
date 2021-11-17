@@ -9,12 +9,13 @@ body, html {
 }
 
 .container {
-  width: 85%;
   margin: 0 auto;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 7em;
+  padding-right: 7em;
 }
 .container .module {
   margin: 0 auto;
@@ -28,6 +29,7 @@ body, html {
   padding-top: 2em;
   padding-right: 5em;
   padding-left: 4em;
+  width: 55%;
 }
 .container .module .module-text-content .module-title {
   font-family: "Inter", sans-serif;
@@ -78,6 +80,17 @@ body, html {
   mix-blend-mode: multiply;
 }
 
+@media (min-width: 1600px) {
+  .container .module .module-text-content .module-title {
+    font-size: 1.5rem;
+  }
+  .container .module .module-text-content .module-description {
+    font-size: 1rem;
+  }
+  .container .module .module-text-content .module-numbers {
+    margin-top: 2em;
+  }
+}
 @media (max-width: 1435px) {
   .container .module .module-text-content .module-numbers {
     margin-top: 2em;
