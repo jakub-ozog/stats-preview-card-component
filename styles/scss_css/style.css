@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   background-color: #090b1a;
   padding: 0;
   margin: 0;
@@ -44,12 +45,11 @@ body, html {
   font-family: "Inter", sans-serif;
   line-height: 1.8em;
   font-size: 0.94rem;
+  margin-bottom: 2.1em;
 }
 .container .module .module-text-content .module-numbers {
   display: flex;
   gap: 4em;
-  font-family: "Lexend Deca", sans-serif;
-  margin-top: 4em;
   font-family: "Inter", sans-serif;
 }
 .container .module .module-text-content .module-numbers .stats-header {
@@ -96,23 +96,6 @@ body, html {
     font-size: 1.2em;
   }
 }
-/* @media (max-width: 1330px) {
-    .container {
-        .module {
-            .module-text-content {
-                .module-numbers {
-                    margin-top: .4em;
-                }
-            }
-        }
-    }  
-
-} */
-@media (max-width: 1435px) {
-  .container .module .module-text-content .module-numbers {
-    margin-top: 2em;
-  }
-}
 @media (max-width: 1100px) {
   .container {
     padding-left: 0;
@@ -138,6 +121,7 @@ body, html {
   .container .module .module-text-content .module-numbers {
     justify-content: center;
     gap: 3em;
+    padding-bottom: 2em;
   }
   .container .module .module-image-section {
     display: flex;
@@ -153,7 +137,7 @@ body, html {
 }
 @media (max-width: 750px) {
   .container {
-    width: 100%;
+    width: 95%;
   }
   .container .module .module-text-content {
     text-align: center;
