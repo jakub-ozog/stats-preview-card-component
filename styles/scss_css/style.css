@@ -4,12 +4,12 @@ html {
   padding: 0;
   margin: 0;
 }
-
-* {
+body *,
+html * {
   box-sizing: border-box;
 }
-
-.container {
+body .container,
+html .container {
   margin: 0 auto;
   height: 100vh;
   display: flex;
@@ -18,7 +18,8 @@ html {
   padding-left: 7em;
   padding-right: 7em;
 }
-.container .module {
+body .container .module,
+html .container .module {
   margin: 0 auto;
   background-color: #1b1938;
   display: flex;
@@ -26,53 +27,65 @@ html {
   border-radius: 0.8em;
   overflow: hidden;
 }
-.container .module .module-text-content {
+body .container .module .module-text-content,
+html .container .module .module-text-content {
   padding-top: 2em;
   padding-right: 5em;
   padding-left: 4em;
   width: 55%;
 }
-.container .module .module-text-content .module-title {
+body .container .module .module-text-content .module-title,
+html .container .module .module-text-content .module-title {
   font-family: "Inter", sans-serif;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.25rem;
 }
-.container .module .module-text-content .module-title .soft-violet-text {
+body .container .module .module-text-content .module-title .soft-violet-text,
+html .container .module .module-text-content .module-title .soft-violet-text {
   color: #aa5cdb;
 }
-.container .module .module-text-content .module-description {
+body .container .module .module-text-content .module-description,
+html .container .module .module-text-content .module-description {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Inter", sans-serif;
   line-height: 1.8em;
   font-size: 0.94rem;
-  margin-bottom: 3em;
 }
-.container .module .module-text-content .module-numbers {
+body .container .module .module-text-content .module-numbers,
+html .container .module .module-text-content .module-numbers {
   display: flex;
   gap: 4em;
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 4em;
   font-family: "Inter", sans-serif;
 }
-.container .module .module-text-content .module-numbers .stats-header {
+body .container .module .module-text-content .module-numbers .stats-header,
+html .container .module .module-text-content .module-numbers .stats-header {
   color: white;
 }
-.container .module .module-text-content .module-numbers .stats-subheader {
+body .container .module .module-text-content .module-numbers .stats-subheader,
+html .container .module .module-text-content .module-numbers .stats-subheader {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
+  font-size: 0.94rem;
 }
-.container .module .module-text-content .module-numbers h2 {
+body .container .module .module-text-content .module-numbers h2,
+html .container .module .module-text-content .module-numbers h2 {
   margin-bottom: 0.4em;
 }
-.container .module .module-image-section {
+body .container .module .module-image-section,
+html .container .module .module-image-section {
   position: relative;
 }
-.container .module .module-image-section .module-image {
+body .container .module .module-image-section .module-image,
+html .container .module .module-image-section .module-image {
   display: block;
 }
-.container .module .module-image-section .module-image-mob {
+body .container .module .module-image-section .module-image-mob,
+html .container .module .module-image-section .module-image-mob {
   display: none;
 }
-.container .module .module-image-section .image-overlay {
+body .container .module .module-image-section .image-overlay,
+html .container .module .module-image-section .image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -84,31 +97,30 @@ html {
   -webkit-filter: contrast(1.5);
   mix-blend-mode: multiply;
 }
-
 @media (min-width: 1600px) {
-  .container .module .module-text-content .module-title {
-    font-size: 1.8rem;
+  body .container .module .module-text-content .module-title,
+html .container .module .module-text-content .module-title {
+    font-size: 1.5rem;
   }
-  .container .module .module-text-content .module-description {
+  body .container .module .module-text-content .module-description,
+html .container .module .module-text-content .module-description {
     font-size: 1rem;
   }
-  .container .module .module-text-content .module-numbers {
+  body .container .module .module-text-content .module-numbers,
+html .container .module .module-text-content .module-numbers {
+    margin-top: 2em;
     font-size: 1.2em;
   }
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 @media (max-width: 1435px) {
-  .container .module .module-text-content .module-numbers {
+  body .container .module .module-text-content .module-numbers,
+html .container .module .module-text-content .module-numbers {
     margin-top: 2em;
   }
 }
-=======
->>>>>>> e76b335cf12004d4e0c68302c918e97a1483d2ae
->>>>>>> Stashed changes
 @media (max-width: 1100px) {
-  .container {
+  body .container,
+html .container {
     padding-left: 0;
     padding-right: 0;
     width: 70%;
@@ -116,58 +128,62 @@ html {
     padding-top: 2em;
     padding-bottom: 2em;
   }
-  .container .module {
+  body .container .module,
+html .container .module {
     flex-direction: column-reverse;
     width: 80%;
     text-align: center;
   }
-  .container .module .module-text-content {
+  body .container .module .module-text-content,
+html .container .module .module-text-content {
     width: 100%;
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
-  .container .module .module-text-content .module-title {
-    font-size: 1.7rem;
+  body .container .module .module-text-content .module-title,
+html .container .module .module-text-content .module-title {
+    font-size: 1rem;
   }
-  .container .module .module-text-content .module-numbers {
+  body .container .module .module-text-content .module-numbers,
+html .container .module .module-text-content .module-numbers {
     justify-content: center;
     gap: 3em;
-<<<<<<< Updated upstream
-    padding-bottom: 2.5em;
-=======
-<<<<<<< HEAD
     padding-bottom: 2em;
-=======
-    padding-bottom: 2.5em;
->>>>>>> e76b335cf12004d4e0c68302c918e97a1483d2ae
->>>>>>> Stashed changes
   }
-  .container .module .module-image-section {
+  body .container .module .module-image-section,
+html .container .module .module-image-section {
     display: flex;
     justify-content: center;
   }
-  .container .module .module-image-section .module-image {
+  body .container .module .module-image-section .module-image,
+html .container .module .module-image-section .module-image {
     display: none;
   }
-  .container .module .module-image-section .module-image-mob {
+  body .container .module .module-image-section .module-image-mob,
+html .container .module .module-image-section .module-image-mob {
     width: 100%;
     display: block;
   }
 }
 @media (max-width: 750px) {
-  .container {
-    width: 95%;
+  body .container,
+html .container {
+    width: 100%;
   }
-  .container .module .module-text-content {
+  body .container .module .module-text-content,
+html .container .module .module-text-content {
     text-align: center;
   }
-  .container .module .module-text-content .module-title {
-    font-size: 1.4rem;
+  body .container .module .module-text-content .module-title,
+html .container .module .module-text-content .module-title {
+    font-size: 0.9rem;
   }
-  .container .module .module-text-content .module-description {
+  body .container .module .module-text-content .module-description,
+html .container .module .module-text-content .module-description {
     font-size: 0.85rem;
   }
-  .container .module .module-text-content .module-numbers {
+  body .container .module .module-text-content .module-numbers,
+html .container .module .module-text-content .module-numbers {
     justify-content: center;
     flex-direction: column;
     gap: 0.1em;
@@ -175,12 +191,49 @@ html {
   }
 }
 @media (max-width: 700px) {
-  .container .module {
+  body .container .module,
+html .container .module {
     width: 80%;
   }
 }
 @media (max-width: 700px) {
-  .container .module {
+  body .container .module,
+html .container .module {
+    width: 80%;
+  }
+  body .container,
+html .container {
+    width: 95%;
+  }
+  body .container .module .module-text-content,
+html .container .module .module-text-content {
+    text-align: center;
+  }
+  body .container .module .module-text-content .module-title,
+html .container .module .module-text-content .module-title {
+    font-size: 1.4rem;
+  }
+  body .container .module .module-text-content .module-description,
+html .container .module .module-text-content .module-description {
+    font-size: 0.85rem;
+  }
+  body .container .module .module-text-content .module-numbers,
+html .container .module .module-text-content .module-numbers {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.1em;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 700px) {
+  body .container .module,
+html .container .module {
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  body .container .module,
+html .container .module {
     width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
