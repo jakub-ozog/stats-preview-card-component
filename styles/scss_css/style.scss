@@ -3,19 +3,192 @@
 
 body,
 html {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+  background-color: colors.$VeryDarkBlue;
+  padding: 0;
+  margin: 0;
+=======
+>>>>>>> Stashed changes
     background-color: colors.$VeryDarkBlue;
     padding: 0;
     margin: 0;
+>>>>>>> e76b335cf12004d4e0c68302c918e97a1483d2ae
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 7em;
+  padding-right: 7em;
+
+  .module {
+=======
+>>>>>>> e76b335cf12004d4e0c68302c918e97a1483d2ae
+>>>>>>> Stashed changes
     margin: 0 auto;
-    height: 100vh;
+    background-color: colors.$DarkDesaturatedBlue;
     display: flex;
+<<<<<<< HEAD
+    justify-content: space-between;
+    border-radius: 0.8em;
+    overflow: hidden;
+
+    .module-text-content {
+      padding-top: 2em;
+      padding-right: 5em;
+      padding-left: 4em;
+      width: 55%;
+
+      .module-title {
+        font-family: fonts.$InterFont;
+        color: colors.$White;
+        font-size: 1.25rem;
+
+        .soft-violet-text {
+          color: colors.$SoftViolet;
+        }
+      }
+
+      .module-description {
+        color: colors.$SlightlyTransparentWhite2;
+        font-family: fonts.$InterFont;
+        line-height: 1.8em;
+        font-size: fonts.$BodyFontSize;
+      }
+      .module-numbers {
+        display: flex;
+        gap: 4em;
+        font-family: fonts.$LexendDecaFont;
+        margin-top: 4em;
+        font-family: fonts.$InterFont;
+
+        .stats-header {
+          color: colors.$White;
+        }
+
+        .stats-subheader {
+          color: colors.$SlightlyTransparentWhite2;
+          font-size: 0.94rem;
+        }
+
+        h2 {
+          margin-bottom: 0.4em;
+        }
+      }
+    }
+
+    .module-image-section {
+      position: relative;
+
+      .module-image {
+        display: block;
+      }
+
+      .module-image-mob {
+        display: none;
+      }
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: colors.$SoftViolet;
+        opacity: 0.8;
+        filter: contrast(1.5);
+        -webkit-filter: contrast(1.5);
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    .module {
+      .module-text-content {
+        .module-title {
+          font-size: 1.5rem;
+        }
+
+        .module-description {
+          font-size: 1rem;
+        }
+        .module-numbers {
+          margin-top: 2em;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1435px) {
+  .container {
+    .module {
+      .module-text-content {
+        .module-numbers {
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 70%;
+    height: 50%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    .module {
+      flex-direction: column-reverse;
+      width: 80%;
+      text-align: center;
+
+      .module-text-content {
+        width: 100%;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+
+        .module-title {
+          font-size: 1rem;
+        }
+
+        .module-numbers {
+          justify-content: center;
+          gap: 3em;
+          padding-bottom: 2em;
+        }
+      }
+
+      .module-image-section {
+        display: flex;
+        justify-content: center;
+
+        .module-image {
+          display: none;
+        }
+
+        .module-image-mob {
+          width: 100%;
+          display: block;
+=======
     align-items: center;
     justify-content: center;
     padding-left: 7em;
@@ -161,11 +334,54 @@ html {
                     display: block;
                 }
             }
+>>>>>>> e76b335cf12004d4e0c68302c918e97a1483d2ae
         }
+      }
     }
+  }
 }
 
 @media (max-width: 750px) {
+<<<<<<< HEAD
+  .container {
+    width: 100%;
+    .module {
+      .module-text-content {
+        text-align: center;
+
+        .module-title {
+          font-size: 0.9rem;
+        }
+
+        .module-description {
+          font-size: 0.85rem;
+        }
+
+        .module-numbers {
+          justify-content: center;
+          flex-direction: column;
+          gap: 0.1em;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    .module {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    .module {
+      width: 80%;
+    }
+  }
+=======
     .container {
         width: 95%;
         .module {
@@ -204,4 +420,8 @@ html {
             width: 80%;
         }
     }
+<<<<<<< Updated upstream
+=======
+>>>>>>> e76b335cf12004d4e0c68302c918e97a1483d2ae
+>>>>>>> Stashed changes
 }
