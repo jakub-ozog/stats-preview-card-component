@@ -35,7 +35,7 @@ html {
 .container .module .module-text-content .module-title {
   font-family: "Inter", sans-serif;
   color: white;
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 .container .module .module-text-content .module-title .soft-violet-text {
   color: #aa5cdb;
@@ -67,6 +67,7 @@ html {
 }
 .container .module .module-image-section .module-image {
   display: block;
+  height: 100%;
 }
 .container .module .module-image-section .module-image-mob {
   display: none;
@@ -85,15 +86,22 @@ html {
 }
 
 @media (min-width: 1600px) {
+  .container .module .module-text-content {
+    width: 53%;
+  }
   .container .module .module-text-content .module-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .container .module .module-text-content .module-description {
     font-size: 1rem;
   }
   .container .module .module-text-content .module-numbers {
-    margin-top: 2em;
     font-size: 1.2em;
+  }
+}
+@media (max-width: 1300px) {
+  .container .module .module-text-content .module-title {
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 1100px) {
@@ -115,13 +123,13 @@ html {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
-  .container .module .module-text-content .module-title {
-    font-size: 1rem;
-  }
   .container .module .module-text-content .module-numbers {
     justify-content: center;
     gap: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 2.2em;
+  }
+  .container .module .module-text-content .module-numbers .stats-column {
+    font-size: 0.9rem;
   }
   .container .module .module-image-section {
     display: flex;
@@ -143,16 +151,23 @@ html {
     text-align: center;
   }
   .container .module .module-text-content .module-title {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   .container .module .module-text-content .module-description {
     font-size: 0.85rem;
+    margin-bottom: 0;
   }
   .container .module .module-text-content .module-numbers {
     justify-content: center;
     flex-direction: column;
     gap: 0.1em;
     font-size: 0.9em;
+  }
+  .container .module .module-text-content .module-numbers .stats-column {
+    font-size: 0.8rem;
+  }
+  .container .module .module-text-content .module-numbers .stats-column .stats-subheader {
+    font-size: 0.8em;
   }
 }
 @media (max-width: 700px) {
